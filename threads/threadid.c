@@ -29,7 +29,7 @@ main(void)
 
 	err = pthread_create(&ntid, NULL, thr_fn, NULL);
 	if (err != 0)
-		err_quit("can't create thread: %s\n", strerror(err));
+		printf("can't create thread: %s\n", strerror(err));
 	printids("main thread:");
 	sleep(1);
 	exit(0);
